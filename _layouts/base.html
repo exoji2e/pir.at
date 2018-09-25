@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Pir.at{% if page.title %} - {{ page.title }}{% endif %}</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link href="/css/syntax.css" rel="stylesheet">
+
+        <!-- Bootstrap mobile thingy http://getbootstrap.com/css/ -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+#div-with-bg
+{
+  background-color: #512483;
+  color: #FFFFFF;
+} 
+        </style>
+
+        <!-- UTF-8 -->
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+<style>
+body
+{
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.panel-body{
+  background-color: #512483;
+  color: #FFFFFF;
+}
+#div-with-bg{
+  color: #FFFFFF;
+}
+
+</style>
+        <div id="div-with-bg" class="jumbotron" style="margin-top: -30px">
+            <div class="container" >
+                <h1>Pir.at</h1>
+            </div>
+        </div>
+
+        <div class=container>
+            <div class="row">
+                {{ content }}
+            </div>
+
+            <div class=row>
+                <hr>
+                {% include footer.html %}
+            </div>
+        </div>
+
+    </body>
+</html>

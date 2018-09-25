@@ -1,0 +1,10 @@
+name: "pirat"
+timezone: "Europe/Stockholm"
+encoding: "utf-8"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "base"
