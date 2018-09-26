@@ -14,23 +14,10 @@ title: Home
   border-radius: 25px;
 }
 </style>
+{% for c in site.data.countries %}
 <div class="col-xs-8 col-sm-6 col-md-3">
-  <a href="https://piratpartiet.se">
-    <div class="box">&#x1F1F8;&#x1F1EA; Piratpartiet</div>
+  <a href="{{c.url}}">
+    <div class="box">{{c.flag}} {{c.name}}</div>
   </a>
 </div>
-<div class="col-xs-8 col-sm-6 col-md-3">
-  <a href="https://piratar.is/">
-    <div class="box">&#x1F1EE;&#x1F1F8; Píratapartýið</div>
-  </a>
-</div>
-<div class="col-xs-8 col-sm-6 col-md-3">
-  <a href="https://www.piratenpartei.de/">
-    <div class="box">&#x1F1E9;&#x1F1EA; Piratenpartei</div>
-  </a>
-</div>
-<div class="col-xs-8 col-sm-6 col-md-3">
-  <a href="https://www.pirati.cz/">
-    <div class="box">&#x1F1E8;&#x1F1FF Pirátská Strana</div>
-  </a>
-</div>
+{% endfor %}
